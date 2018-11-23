@@ -5,3 +5,9 @@ function findMatching(list, name) {
     return driverName.toLowerCase() === name.toLowerCase();
   });
 }
+
+function fuzzyMatch(list, name) {
+  return list.filter(function (driverName) {
+    return driverName.first() === name.first();
+  });
+}
