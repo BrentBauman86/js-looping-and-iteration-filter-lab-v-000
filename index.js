@@ -13,8 +13,8 @@ function fuzzyMatch(list, startName) {
   });
 }
 
-function matchName(driver) {
-  name.filter(function (driverName){
-    return driver === driverName
+function matchName(driver, name) {
+  return driver.filter(function (name){
+    return name.driver.toLowerCase() === driver.toLowerCase();
   });
 }
