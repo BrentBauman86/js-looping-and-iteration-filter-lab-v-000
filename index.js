@@ -13,8 +13,8 @@ function fuzzyMatch(list, startName) {
   });
 }
 
-function matchName(name) {
+function matchName(driver) {
   name.filter(function (driverName){
-    return driverName === name
+    return driver === driverName
   });
 }
